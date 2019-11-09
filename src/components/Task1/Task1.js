@@ -17,7 +17,7 @@ export default class Task1 extends React.Component {
   };
 
   render() {
-    const isValue = this.state.text === this.initText ? "form-control" : "form-control red";
+    const isValue = this.state.text === this.initText ? "form-control green" : "form-control red";
 
     return (
       <div className="task1">
