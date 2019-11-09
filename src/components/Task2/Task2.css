@@ -1,0 +1,22 @@
+.radios {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.checkboxes {
+  margin-bottom: 1rem;
+}
+
+.select {
+  margin-bottom: 1rem;
+}
+
+.select select {
+  margin-bottom: 1rem;
+  width: 10rem !important;
+}
+
+.select span {
+  margin-bottom: 1rem;
+}
+
