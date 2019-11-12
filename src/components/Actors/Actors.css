@@ -1,0 +1,16 @@
+.actors {
+  width: 20rem;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.fa-trash-o {
+  cursor: pointer;
+  padding-top: 0.3rem;
+  float: right;
+}
+
+.fa-trash-o: :hover {
+  color: red;
+}

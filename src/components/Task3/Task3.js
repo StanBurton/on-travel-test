@@ -49,7 +49,6 @@ export default class Task3 extends React.Component {
   render() {
     const { people, planets } = this.state;
 
-    console.log(people, planets);
     const itemsPeople = people.map(el => {
       return <li className="list-group-item">{el.name}</li>;
     });

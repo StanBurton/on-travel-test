@@ -1,0 +1,11 @@
+.AddNewActor {
+  margin-top: 10px;
+}
+
+.AddNewActor input {
+  margin-right: 3px;
+}
+
+.AddNewActor button {
+  white-space: nowrap;
+}
