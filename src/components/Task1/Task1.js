@@ -1,9 +1,9 @@
 import React from "react";
+import ReactDOMServer from "react-dom/server";
 
 import "./Task1.css";
 
 export default class Task1 extends React.Component {
-  
   state = {
     text: "",
     isValue: false,
@@ -17,18 +17,26 @@ export default class Task1 extends React.Component {
   };
 
   render() {
-    const isValue = this.state.text === this.initText ? "form-control green" : "form-control red";
+    const isValue =
+      this.state.text === this.initText
+        ? "form-control"
+        : "form-control red";
+
+    const input = (
+      <input
+        onChange={this.inputHandler}
+        className={isValue}
+        type="text"
+        value={this.state.text}
+        placeholder={this.initText}
+        id="input-form"
+      />
+    );
 
     return (
       <div className="task1">
-        <input
-          onChange={this.inputHandler}
-          className={isValue}
-          type="text"
-          value={this.state.text}
-          placeholder={this.initText}
-          id="input-form"
-        />
+        {input}
+        <p className="text-muted mt-2">{ReactDOMServer.renderToString(input)}</p>
       </div>
     );
   }
