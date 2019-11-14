@@ -17,7 +17,6 @@ export default class Task4 extends React.Component {
   storageAction = action => {
     const iframe = this.myRef.current;
 
-    
     const obj = {
       name: "from domain-one",
     };
