@@ -30,6 +30,7 @@ export default class Task1 extends React.Component {
         value={this.state.text}
         placeholder={this.initText}
         id="input-form"
+        maxLength="80"
       />
     );
 
