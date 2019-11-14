@@ -18,9 +18,7 @@ export default class Task1 extends React.Component {
 
   render() {
     const isValue =
-      this.state.text === this.initText
-        ? "form-control"
-        : "form-control red";
+      this.state.text === this.initText ? "form-control" : "form-control red";
 
     const input = (
       <input
@@ -37,7 +35,9 @@ export default class Task1 extends React.Component {
     return (
       <div className="task1">
         {input}
-        <p className="text-muted mt-2">{ReactDOMServer.renderToString(input)}</p>
+        <p className="text-muted mt-2">
+          {ReactDOMServer.renderToString(input)}
+        </p>
       </div>
     );
   }

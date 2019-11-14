@@ -50,11 +50,19 @@ export default class Task3 extends React.Component {
     const { people, planets } = this.state;
 
     const itemsPeople = people.map((el, index) => {
-      return <li key={index} className="list-group-item">{el.name}</li>;
+      return (
+        <li key={index} className="list-group-item">
+          {el.name}
+        </li>
+      );
     });
 
     const itemsPlanets = planets.map((el, index) => {
-      return <li key={++index} className="list-group-item">{el.name}</li>;
+      return (
+        <li key={++index} className="list-group-item">
+          {el.name}
+        </li>
+      );
     });
 
     const button = (
