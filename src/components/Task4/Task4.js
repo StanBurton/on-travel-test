@@ -74,6 +74,14 @@ export default class Task4 extends React.Component {
           title="second-domain"
           name="second-domain"
         ></iframe>
+        <a
+          className="text-dark text-center mt-2"
+          href="https://github.com/Stassras/iframe-for-ontravel-task/blob/master/home.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          The iframe code is here.
+        </a>
       </div>
     );
   }
